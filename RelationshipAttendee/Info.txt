@@ -1,0 +1,37 @@
+﻿https://stackoverflow.com/questions/67475168/get-psrepository-powershell-warning-unable-to-find-module-repositories-while
+https://subscription.packtpub.com/book/cloud_and_networking/9781789808537/1/ch01lvl1sec16/creating-an-internal-powershell-repository
+https://vanbrenk.blogspot.com/2017/09/install-module-unable-to-resolve.html
+
+
+https://stackoverflow.com/questions/63385304/powershell-install-no-match-was-found-for-the-specified-search-criteria-and-mo
+
+
+
+Get-Module -ListAvailable
+
+[Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12
+
+Register-PSRepository -Default
+
+
+Register-PSRepository PSGallery1 -SourceLocation "https://www.powershellgallery.com/api/v2" -InstallationPolicy Trusted
+
+Install-Module DBATools -Scope CurrentUser
+
+Register-PSRepository -Name MyPowerShell -SourceLocation «host-name»/nuget/MyPowerShell/ -PublishLocation «host-name»/nuget/MyPowerShell
+
+Get-ExecutionPolicy –List
+
+netsh winhttp show proxy
+
+
+http://woshub.com/using-powershell-behind-a-proxy/
+
+https://spaghettidba.com/2017/12/19/recovering-the-psgallery-repository-behind-a-corporate-proxy/
+
+
+https://techramblers.blog/2019/02/14/install-module-name-vmware-powercli-behind-the-proxies/
+
+https://blog.velingeorgiev.com/install-powershell-5-nuget-sharepointpnppowershellonline-behind-proxy
+
+https://dirteam.com/sander/2021/01/19/howto-install-azure-ad-connect-behind-an-internet-proxy/
