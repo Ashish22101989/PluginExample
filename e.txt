@@ -1,0 +1,31 @@
+Set oShell = WScript.CreateObject("WSCript.shell")
+oShell.run "D:\vbsciptexample\a.bat"
+WScript.Sleep 3000
+MsgBox "TEST"
+objProcessId = 0
+objProcessCommandLine = ""
+Set objWMIService = GetObject("winmgmts:\\.\root\cimv2")
+
+Set colItems = objWMIService.ExecQuery("Select * From Win32_Process where name='AppD365Connection.exe'")
+'msgbox colitems
+For Each objItem in colItems
+    objProcessId = objItem.ProcessID
+	objProcessCommandLine = objItem.CommandLine
+    msgbox objItem.name & " " & objItem.ProcessID & " " & objItem.CommandLine
+Next
+WScript.Sleep 3000
+MsgBox "TEST1"
+
+Set colProcessStopTrace = objWMIService.ExecNotificationQuery("SELECT * FROM Win32_ProcessStopTrace")
+	WScript.Echo "Waiting for process to stop ..."
+	WScript.Sleep 3000
+MsgBox "TEST2"
+    Do
+        Set objLatestEvent = colProcessStopTrace.NextEvent
+        If objLatestEvent.ProcessId = objProcessId Then
+            Wscript.Echo "StopProc: " & objLatestEvent.ProcessName
+            Wscript.Echo "Process ID: " & objLatestEvent.ProcessId
+            WScript.Echo "Exit code: " & objLatestEvent.ExitStatus
+			oShell.run "D:\vbsciptexample\e.vbs"
+		End If
+	Loop
