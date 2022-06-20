@@ -1,0 +1,27 @@
+Step By Step Sharepoint Authentication
+--------------------------------------
+
+1. MFA should be disabled for the user 
+   - Ask M365 Admin to disable Multifactor Authentication for the User (This is necessary so that user can login using sharepoint online powershell module)
+   
+   - Install Powershell Module - Microsoft.Online.SharePoint.PowerShell
+   
+   - using below commands set DisableCustomAppAuthentication Property for the tenant. 
+   - This Setting is necessary to enable Authentication from Console Application.
+   
+   - Run both commands using Power shell
+
+	Connect-SPOService -Url https://8cr3ml-admin.sharepoint.com -Credential Ashish@8cr3ml.onmicrosoft.com
+	Set-spotenant -DisableCustomAppAuthentication $false
+		
+2. To setup Authentication for Sharepoint there are 2 ways
+   Accessing SharePoint using an application context, also known as app-only
+   https://docs.microsoft.com/en-us/sharepoint/dev/solution-guidance/security-apponly
+
+
+   1. Azure AD application
+   https://docs.microsoft.com/en-us/sharepoint/dev/solution-guidance/security-apponly-azuread
+   
+   2. Using a SharePoint App-Only principal    
+   Below link shows steps to show how to setup an app principal with tenant full control permissions.
+   https://docs.microsoft.com/en-us/sharepoint/dev/solution-guidance/security-apponly-azureacs
