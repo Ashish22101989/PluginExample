@@ -1,0 +1,335 @@
+The API version '2022-03-01' is not valid for provider 'Microsoft.BusinessAppPlatform' 
+The supported list of API versions are: 
+2016-02-01, 
+2016-11-01, 
+2018-01-01, 
+2018-10-01, 
+2019-05-01, 
+2019-10-01, 
+2020-04-01, 
+2020-05-01, 
+2020-06-01, 
+2020-08-01, 
+2020-09-01, 
+2020-10-01, 
+2021-03-01, 
+2021-04-01, 
+2021-07-01, 
+2022-05-01, 
+2023-06-01
+
+
+
+{
+  "id": "/providers/Microsoft.BusinessAppPlatform/scopes/admin/environments/d01354a0-ee4b-e9f4-8320-fa978f4f2484",
+  "type": "Microsoft.BusinessAppPlatform/scopes/environments",
+  "location": "asia",
+  "name": "d01354a0-ee4b-e9f4-8320-fa978f4f2484",
+  "properties": {
+    "tenantId": "a0b1024a-991b-4a22-b51e-2d3f2319162c",
+    "azureRegion": "eastasia",
+    "displayName": "Customer Service Trial",
+    "createdTime": "2024-01-17T06:11:21.5022653Z",
+    "createdBy": {
+      "id": "bc7e15f2-ddc6-4d17-ac9c-07d7a4aaa406",
+      "displayName": "Ashish Yadav",
+      "email": "Ashish@8cr3ml.onmicrosoft.com",
+      "type": "User",
+      "tenantId": "a0b1024a-991b-4a22-b51e-2d3f2319162c",
+      "userPrincipalName": "Ashish@8cr3ml.onmicrosoft.com"
+    },
+    "lastModifiedTime": "2024-02-07T04:56:11.4712906Z",
+    "provisioningState": "Succeeded",
+    "creationType": "User",
+    "environmentSku": "Trial",
+    "isDefault": false,
+    "clientUris": {
+      "admin": "https://admin.powerplatform.microsoft.com/environments/environment/d01354a0-ee4b-e9f4-8320-fa978f4f2484/hub",
+      "maker": "https://make.powerapps.com/environments/d01354a0-ee4b-e9f4-8320-fa978f4f2484/home"
+    },
+    "runtimeEndpoints": {
+      "microsoft.BusinessAppPlatform": "https://asia.api.bap.microsoft.com",
+      "microsoft.CommonDataModel": "https://asia.api.cds.microsoft.com",
+      "microsoft.PowerApps": "https://asia.api.powerapps.com",
+      "microsoft.PowerAppsAdvisor": "https://asia.api.advisor.powerapps.com",
+      "microsoft.PowerVirtualAgents": "https://powervamg.as-il102.gateway.prod.island.powerapps.com",
+      "microsoft.ApiManagement": "https://management.ASIA.azure-apihub.net",
+      "microsoft.Flow": "https://asia.api.flow.microsoft.com"
+    },
+    "expirationTime": "2024-02-16T06:11:52.9745927Z",
+    "maxAllowedExpirationTime": "2024-03-17T06:11:21.5076845Z",
+    "databaseType": "CommonDataService",
+    "linkedEnvironmentMetadata": {
+      "resourceId": "25dbebad-71b4-ee11-9075-000d3a81919e",
+      "friendlyName": "Customer Service Trial",
+      "uniqueName": "unq25dbebad71b4ee119075000d3a819",
+      "domainName": "org1d37cbd1",
+      "version": "9.2.24013.00172",
+      "instanceUrl": "https://org1d37cbd1.crm5.dynamics.com/",
+      "instanceApiUrl": "https://org1d37cbd1.api.crm5.dynamics.com",
+      "baseLanguage": 1033,
+      "instanceState": "Ready",
+      "createdTime": "2024-01-17T06:11:23.16Z",
+      "securityGroupId": "73e4a511-8547-4b27-b85f-ca66523b9cc8",
+      "backgroundOperationsState": "Enabled",
+      "scaleGroup": "APJCRMLIVESG606",
+      "platformSku": "Standard",
+      "schemaType": "Full"
+    },
+    "trialMetadata": {
+      "trialScenarioType": "CustomerService",
+      "applicationLandingUrl": "msdyn_CustomerServiceWorkspace"
+    },
+    "trialScenarioType": "CustomerService",
+    "notificationMetadata": {
+      "state": "NotSpecified",
+      "branding": "CETrial"
+    },
+    "retentionPeriod": "P7D",
+    "states": {
+      "management": {
+        "id": "Ready"
+      },
+      "runtime": {
+        "runtimeReasonCode": "NotSpecified",
+        "requestedBy": {
+          "displayName": "SYSTEM",
+          "type": "NotSpecified"
+        },
+        "id": "Enabled"
+      }
+    },
+    "updateCadence": {
+      "id": "Frequent"
+    },
+    "retentionDetails": {
+      "retentionPeriod": "P7D",
+      "backupsAvailableFromDateTime": "2024-01-31T05:06:28.1326612Z"
+    },
+    "protectionStatus": {
+      "keyManagedBy": "Microsoft"
+    },
+    "cluster": {
+      "category": "Prod",
+      "number": "102",
+      "uriSuffix": "as-il102.gateway.prod.island",
+      "geoShortName": "AS",
+      "environment": "Prod"
+    },
+    "connectedGroups": [],
+    "lifecycleOperationsEnforcement": {
+      "allowedOperations": [
+        {
+          "type": {
+            "id": "Move"
+          }
+        },
+        {
+          "type": {
+            "id": "Convert"
+          }
+        },
+        {
+          "type": {
+            "id": "Delete"
+          }
+        },
+        {
+          "type": {
+            "id": "Edit"
+          }
+        },
+        {
+          "type": {
+            "id": "Recover"
+          }
+        },
+        {
+          "type": {
+            "id": "UpdateProtectionStatus"
+          }
+        },
+        {
+          "type": {
+            "id": "NewIdentity"
+          }
+        },
+        {
+          "type": {
+            "id": "SwapIdentity"
+          }
+        },
+        {
+          "type": {
+            "id": "RevertIdentity"
+          }
+        },
+        {
+          "type": {
+            "id": "Enable"
+          }
+        },
+        {
+          "type": {
+            "id": "Disable"
+          }
+        },
+        {
+          "type": {
+            "id": "EnableGovernanceConfiguration"
+          }
+        }
+      ],
+      "disallowedOperations": [
+        {
+          "type": {
+            "id": "Provision"
+          },
+          "reason": {
+            "message": "Provision cannot be performed because there is no linked CDS instance or the CDS instance version is not supported.",
+            "type": "CdsLink"
+          }
+        },
+        {
+          "type": {
+            "id": "Unlock"
+          },
+          "reason": {
+            "message": "Unlock cannot be performed because there is no linked CDS instance or the CDS instance version is not supported.",
+            "type": "CdsLink"
+          }
+        },
+        {
+          "type": {
+            "id": "Backup"
+          },
+          "reason": {
+            "message": "Backup cannot be performed on environment of type Trial.",
+            "type": "EnvironmentSkuType"
+          }
+        },
+        {
+          "type": {
+            "id": "Copy"
+          },
+          "reason": {
+            "message": "Copy cannot be performed on environment of type Trial.",
+            "type": "EnvironmentSkuType"
+          }
+        },
+        {
+          "type": {
+            "id": "Promote"
+          },
+          "reason": {
+            "message": "Promote cannot be performed on environment of type Trial.",
+            "type": "EnvironmentSkuType"
+          }
+        },
+        {
+          "type": {
+            "id": "Reset"
+          },
+          "reason": {
+            "message": "Reset cannot be performed on environment of type Trial.",
+            "type": "EnvironmentSkuType"
+          }
+        },
+        {
+          "type": {
+            "id": "Restore"
+          },
+          "reason": {
+            "message": "Restore cannot be performed on environment of type Trial.",
+            "type": "EnvironmentSkuType"
+          }
+        },
+        {
+          "type": {
+            "id": "NewCustomerManagedKey"
+          },
+          "reason": {
+            "message": "NewCustomerManagedKey cannot be performed on environment of type Trial.",
+            "type": "EnvironmentSkuType"
+          }
+        },
+        {
+          "type": {
+            "id": "RotateCustomerManagedKey"
+          },
+          "reason": {
+            "message": "RotateCustomerManagedKey cannot be performed on environment of type Trial.",
+            "type": "EnvironmentSkuType"
+          }
+        },
+        {
+          "type": {
+            "id": "RevertToMicrosoftKey"
+          },
+          "reason": {
+            "message": "RevertToMicrosoftKey cannot be performed on environment of type Trial.",
+            "type": "EnvironmentSkuType"
+          }
+        },
+        {
+          "type": {
+            "id": "NewNetworkInjection"
+          },
+          "reason": {
+            "message": "NewNetworkInjection cannot be performed on environment of type Trial.",
+            "type": "EnvironmentSkuType"
+          }
+        },
+        {
+          "type": {
+            "id": "SwapNetworkInjection"
+          },
+          "reason": {
+            "message": "SwapNetworkInjection cannot be performed on environment of type Trial.",
+            "type": "EnvironmentSkuType"
+          }
+        },
+        {
+          "type": {
+            "id": "RevertNetworkInjection"
+          },
+          "reason": {
+            "message": "RevertNetworkInjection cannot be performed on environment of type Trial.",
+            "type": "EnvironmentSkuType"
+          }
+        },
+        {
+          "type": {
+            "id": "ForceFailover"
+          },
+          "reason": {
+            "message": "ForceFailover cannot be performed on environment of type Trial.",
+            "type": "EnvironmentSkuType"
+          }
+        },
+        {
+          "type": {
+            "id": "DisableGovernanceConfiguration"
+          },
+          "reason": {
+            "message": "DisableGovernanceConfiguration cannot be performed on Power Platform environment because of the governance configuration.",
+            "type": "GovernanceConfig"
+          }
+        },
+        {
+          "type": {
+            "id": "UpdateGovernanceConfiguration"
+          },
+          "reason": {
+            "message": "UpdateGovernanceConfiguration cannot be performed on Power Platform environment because of the governance configuration.",
+            "type": "GovernanceConfig"
+          }
+        }
+      ]
+    },
+    "governanceConfiguration": {
+      "protectionLevel": "Basic"
+    },
+    "bingChatEnabled": false
+  }
+}
